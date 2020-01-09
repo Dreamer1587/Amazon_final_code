@@ -5,6 +5,7 @@
     <classes>
       <class name="com.amazon.Amazon">
         <methods>
+          <include name="Login"/>
           <include name="cancel_cod"/>
         </methods>
       </class> <!-- com.amazon.Amazon -->

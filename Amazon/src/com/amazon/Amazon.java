@@ -26,13 +26,13 @@ public class Amazon {
 	@Test
 	public void Login() throws IOException {
 
-		File src = new File("C:\\Users\\HP\\git\\amazoncod\\Amazon\\datafile.properties");
+		File src = new File("C:\\Users\\HP\\git\\Flash\\Amazon\\datafile.properties");
 		FileInputStream file = new FileInputStream(src);
 		pr = new Properties();
 		pr.load(file);
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\old hard disk backup\\d drive\\Web_Drivers\\chromedriver_win32_Good\\chromedriver.exe");
+				"C:\\Users\\HP\\git\\Flash\\Amazon\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 
 		driver.get(pr.getProperty("url"));
